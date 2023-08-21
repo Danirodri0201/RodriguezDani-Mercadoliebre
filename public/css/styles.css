@@ -1,13 +1,21 @@
-* {
-box-sizing:border-box
-}
+
 body {
         font-family: "roboto";
         font-size: 12px;
 }
+.artic-margin{
+    margin: 10px;
 
+  }
 h2 {
     font-size: 24px;
+    color: #666;
+}
+h3{
+    display: none;
+}
+article:hover > div > h3{
+    display: flex;
 }
 .font-16px{
     font-size: 16px;
@@ -38,16 +46,184 @@ background-color: #ebebeb;
 .icon-blue {
     color: #1259c3;
 }
+.button {
+    background-color: #1259c3;
+    color:#FFF;
+    border:none;
+    border-radius: 4px;
+    padding:5px
+}
+.button:hover {
+    background-color: #0022AA;
+    color:#FFF;
+    border:none;
+    border-radius: 4px;
+    padding:5px
+}
+img {
+    
+    width: 100%;
+}
+
 
 .w-50{
     width:50%;
 };
+.vw-90{
+    width:90vw;
+};
+
+.bt-1{
+    border-top-style: solid;
+    border-top-width: 1px;
+  }
+.border-grey{
+    border-color: #ebebeb;
+}
+.p-15{
+padding: 15px;
+}
 .p-1{
     padding:8px;
+}
+.font-green{
+    color:#39b54a;
 }
 
 .icon-size{
     font-size: 2em;
     margin-bottom: 10px;
 }
+
+
+  .product-desc-box{
+    position: relative;
+  }
+  .product-desc-box > .product-delivery-icon{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    color: #39b54a;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    }
+  .displayflex {
+    display: flex;
+  }
+  .fg-1 {
+    
+    flex-grow: 1;
+  }
+  .w-70{
+    
+    width: 70%;;
+  }
+  ul > li > a {
+    text-decoration: none;
+    color:#03264C
+  }
+  .w-400{
+    width: 400px !important;
+  }
+  #form > p {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+.barra-busqueda{
+    width: 250px;
+    border: none;
+    border-radius: 4px;
+    padding: 5px;
+}
+.margin-20{
+    margin: -20px;
+}
+  #form > p > input{
+    width: 200px;
+    border: none;
+    border-radius: 4px;
+    padding: 5px;
+  }
+ .fw{
+    font-weight: 600;
+ }
+ .fs-15{
+    font-size: 15px;
+ }
+ .flexd-column{
+    display: flex;
+    flex-direction: column;
+ }
+ .w-200{
+    width: 200px;
+ }
+ .jc-center{
+    justify-content:center;
+}
+.hiddensi{
+    display: none;
+}
+.minwidth200{
+    min-width: 200px;
+}
+.flex-wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* hay que esconder la descripcion de tablet en adelante, se va a heber en la clase de display*/
+@media (min-width: 520px) {
+    /* tablet */
+    .hidden{
+        display: none;
+    }
+    .hiddensi{
+        display: flex;
+    }
+
+    .md-product-shadow{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .md-w-50 {
+      width: 46%;
+    }
+    .md-flex-2-items{
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    .md-jc-space-around{
+        justify-content: space-around;
+    }
+  
+    
+    .fd-row{
+        display:flex;
+        flex-direction: row;
+    }
+   
+    .p-75{
+        padding-left: 75px;
+    }
+    
+    
+  }
+    
+    @media (min-width: 1280px) {
+        /* desktop */
+         .md-flex-4-items{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .dt-fd-row{
+        display:flex;
+        flex-direction: row;
+    }
+      }
 
