@@ -16,6 +16,14 @@ h3{
 }
 article:hover > div > h3{
     display: flex;
+    transition-duration: 0.5s;
+}
+article{
+    box-shadow: none;
+}
+article:hover{
+box-shadow:5px 5px 15px rgb(32, 32, 32) ;
+transition-duration: 0.5s
 }
 .font-16px{
     font-size: 16px;
@@ -58,7 +66,8 @@ background-color: #ebebeb;
     color:#FFF;
     border:none;
     border-radius: 4px;
-    padding:5px
+    padding:5px;
+    transition-duration: 0.5s
 }
 img {
     
@@ -113,6 +122,10 @@ padding: 15px;
     right: 20px;
     top: -15px;
     }
+   .product-delivery-icon:hover{
+rotate: -90deg;
+transition-duration: 0.5s;
+   }
   .displayflex {
     display: flex;
   }
@@ -225,5 +238,6 @@ padding: 15px;
         display:flex;
         flex-direction: row;
     }
+   
       }
 
